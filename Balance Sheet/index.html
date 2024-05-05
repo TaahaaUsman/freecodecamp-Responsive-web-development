@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance Sheet</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        border: 2px solid grey;
+      }
+
+      .intro {
+        margin: 20px;
+      }
+      .intro h2 {
+        font-size: 25px;
+        font-weight: 900;
+      }
+      .intro h1 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      .blackDiv {
+        padding: 0 15px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 35px;
+      }
+
+      h3 {
+        color: rgb(6, 198, 247);
+        font-weight: 400;
+      }
+
+      .same {
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+      }
+      .price {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .content {
+        display: flex;
+        justify-content: space-between;
+      }
+      .total hr {
+        padding: 0;
+        margin: 2px 0;
+      }
+      .total:hover {
+        background-color: rgb(5, 238, 226, 0.6);
+      }
+
+      .main {
+        padding: 10px;
+      }
+      .text {
+        
+      }
+
+      @media screen and (min-width) {
+        body {
+          padding: 0;
+          margin: 0;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <h2>Balance Sheet</h2>
+        <h1>AcmeWidgetCorp</h1>
+      </div>
+      <div class="blackDiv">
+        <div class="price">
+        <b>2019</b>
+        <b>2020</b>
+        <b>2021</b>
+      </div>
+      </div>
+      <div class="main">
+        <h3>Assets</h3>
+        <div class="same">
+          <b>Cash</b>
+          <div class="price">
+          <span>$25</span>
+          <span>$30</span>
+          <span>$28</span>
+        </div>
+        </div>
+        <span class="text">This is the cash we currently have on hand.</span>
+        <div class="same">
+          <b>Checking</b>
+          <div class="price">
+          <span>$54</span>
+          <span>$56</span>
+          <span>$53</span>
+        </div>
+        </div>
+        <span class="text">Our primary transactional account.</span>
+        <div class="same">
+          <b>Savings</b>
+          <div class="price">
+          <span>$500</span>
+          <span>$650</span>
+          <span>$728</span>
+          </div>
+        </div>
+        <span class="text">Funds set aside for emergencies.</span>
+        <div class="total">
+          <div class="content">
+            <b>Total</b>
+            <div class="price">
+            <b>$579</b>
+            <b>$736</b>
+            <b>$809</b>
+          </div>
+          </div>
+          <hr />
+          <hr />
+        </div>
+        <h3>Liabilities</h3>
+        <div class="same">
+          <b>Loans</b>
+          <div class="price">
+          <span>$500</span>
+          <span>$250</span>
+          <span>$0</span>
+        </div>
+        </div>
+        <span class="text">The outstanding balance on our startup loan.</span>
+        <div class="same">
+          <b>Expenses</b>
+          <div class="price">
+          <span>$200</span><span>$300</span><span>$400</span>
+        </div>
+        </div>
+        <span class="text">Annual anticipated expenses, such as payroll.</span>
+        <div class="same">
+          <b>Credit</b>
+          <div class="price">
+          <span>$50</span><span>$50</span><span>$75</span>
+        </div>
+        </div>
+        <span class="text">The outstanding balance on our credit card.</sp>
+        <div class="total">
+          <div class="content">
+            <b>Total</b>
+            <div class="price">
+            <b>$750</b>
+            <b>$600</b>
+            <b>$475</b>
+          </div>
+          </div>
+          <hr />
+          <hr />
+        </div>
+        <h3>Net Worth</h3>
+        <div class="total">
+          <div class="content">
+            <b>Total</b>
+            <div class="price">
+            <b>$-171</b>
+            <b>$136</b>
+            <b>#334</b>
+          </div>
+          </div>
+          <hr />
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

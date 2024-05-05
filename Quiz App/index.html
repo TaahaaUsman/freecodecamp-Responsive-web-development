@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        width: 100%;
+        padding: 20px;
+      }
+      .header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      .header h1 {
+        font-size: 3vw;
+      }
+      .header h2 {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 20px;
+        color: rgb(243, 208, 7);
+      }
+      .header a {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* Footer */
+
+      footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+      footer a {
+        color: white;
+      }
+      .line {
+        height: 5px;
+        background-color: grey;
+        margin-bottom: 20px;
+      }
+      .container {
+        padding: 10px;
+      }
+      .studentInfo,
+      .htmlDoc,
+      .cssDoc {
+        margin: 10px;
+        padding: 10px 20px;
+      }
+      .studentInfo input {
+        margin: 10px 0;
+        width: 30vw;
+      }
+      .htmlDoc p {
+        margin: 20px 0;
+      }
+      .cssDoc select {
+        margin-bottom: 20px;
+      }
+      .container button {
+        width: 120px;
+        padding: 12px;
+        border: 3px solid black;
+        font-size: 20px;
+        margin: 20px 0;
+        margin-left: 45%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="logo">freeCodeCamp</h1>
+      <h2 class="logoColored">HTML/CSS QUIZ</h2>
+      <a href="#studentInfo">INFO</a>
+      <a href="#htmlDoc">HTML</a>
+      <a href="#cssDoc">CSS</a>
+    </div>
+
+    <div class="container">
+      <h2 id="studentInfo">Student Info</h2>
+      <div class="line"></div>
+      <div class="studentInfo">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <br />
+        <label for="date">D.O.B.:</label>
+        <input type="date" id="date" />
+      </div>
+
+      <h2 id="htmlDoc">HTML</h2>
+      <div class="line"></div>
+      <div class="htmlDoc">
+        <p><b>Question # 1</b></p>
+        <p>
+          The legend element represents a caption for the content of its parent
+          fieldset element
+        </p>
+        <input type="radio" name="same" />
+        <label for="">True</label>
+        <br />
+        <input type="radio" name="same" />
+        <label for="">False</label>
+
+        <p><b>Question # 2</b></p>
+        <p>
+          A label element nesting an input element is required to have a for
+          attribute with the same value as the input's id
+        </p>
+        <input type="radio" name="same1" />
+        <label for="">False</label>
+        <br />
+        <input type="radio" name="same1" />
+        <label for="">True</label>
+      </div>
+
+      <h2 id="cssDoc">CSS</h2>
+      <div class="line"></div>
+      <div class="cssDoc">
+        <label for="select"
+          >Can the CSS margin property accept negative values?</label
+        >
+        <br />
+        <select name="select">
+          <option>Select an Option</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <br />
+        <label for="area">Do you have any questions:</label>
+        <br />
+        <textarea
+          name="area"
+          cols="30"
+          rows="4"
+          style="padding: 5px"
+          placeholder="Who is flexbox..."
+        ></textarea>
+      </div>
+
+      <button>Send</button>
+    </div>
+
+    <footer>
+      <a href="#">freeCodeCamp</a>
+      <p>San Francisco<br />California<br />USA</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rothhko-style Rectangal</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 30px 0;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 80%;
+            background-color: white;
+            padding: 50px 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: brown;
+            backdrop-filter: brightness(120%);
+            filter: blur(2px);
+        }
+        .box1, .box2, .box3 {
+            height: 130px;
+            margin: 5px 0;
+            /* filter: blur(2px); */
+        }
+        .box1 {
+            width: 80%;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+        .box2 {
+            width: 95%;
+            background-color: red;
+            border-radius: 8px;
+        }
+        .box3 {
+            width: 95%;
+            background-color: red;
+            border-radius: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+</html>

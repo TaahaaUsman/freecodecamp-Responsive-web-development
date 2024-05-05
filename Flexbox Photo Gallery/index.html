@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Photo Gallery</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        width: 100%;
+        padding: 20px;
+      }
+      .heading {
+        background-color: black;
+        color: white;
+        height: 120px;
+      }
+      .heading h1 {
+        font-size: 6vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading hr {
+        background-color: rgb(240, 186, 7);
+        border: none;
+        height: 6px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .container img {
+        width: 28vw;
+        height: 35vw;
+        margin: 10px;
+        border-top-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+      @media screen and (max-width: 400px) {
+        .container img {
+            width: 200px;
+            height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>FlexBox Photo Gallery</h1>
+      <hr />
+    </div>
+    <div class="container">
+      <img src="./photos/img1.jpeg" alt=""/>
+      <img src="./photos/img2.jpeg" alt="" />
+      <img src="./photos/img3.jpg" alt="" />
+      <img src="./photos/img4.jpeg" alt="" />
+      <img src="./photos/img5.jpeg" alt="" />
+      <img src="./photos/img6.jpg" alt="" />
+      <img src="./photos/img7.jpeg" alt="" />
+    </div>
+  </body>
+</html>
